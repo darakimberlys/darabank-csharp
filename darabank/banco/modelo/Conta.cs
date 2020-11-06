@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace darabank
 {
@@ -8,6 +9,7 @@ namespace darabank
         protected double saldo;
         private int agencia;
         private int numeroDaConta;
+        private Cliente titular;
 
         public Conta(int agencia, int numeroDaConta)
         {
@@ -36,14 +38,58 @@ namespace darabank
         //incluir metodos nos getters e setters
         public int Saldo { get; set; }
 
-        public int Agencia { get; set; }
+        public int Agencia
+        {
+            get { return this.agencia = Agencia; }
 
-        public int NumeroDaConta { get; set; }
+            set
+            {
+                this.agencia = Agencia;
+
+                if (agencia <= 0)
+                {
+                    Console.WriteLine("O número da agencia não pode ser menor ou igual a zero.");
+                }
+            }
+
+        }
+
+        public int NumeroDaConta {
+
+            get { return this.numeroDaConta = NumeroDaConta; }
+
+            set
+            {
+                if (numeroDaConta <= 0)
+                {
+                    Console.WriteLine("O número da conta não pode ser menor ou igual a zero.");
+                }
+                this.numeroDaConta = numeroDaConta;
+            }
+        }
 
         public Cliente Titular { get; set; }//verificar
 
         //verificar getters e setters - incluir do titular
 
-        //incluir metodos
+        public override bool Equals(object? obj)
+        {
+            Conta outraConta = (Conta) obj;
+            if (this.agencia != outraConta.agencia)
+            {
+                return false;
+            }
+            if (this.numeroDaConta != outraConta.numeroDaConta)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }
