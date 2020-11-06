@@ -51,7 +51,6 @@ namespace darabank
                     Console.WriteLine("O número da agencia não pode ser menor ou igual a zero.");
                 }
             }
-
         }
 
         public int NumeroDaConta {
