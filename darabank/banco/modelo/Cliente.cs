@@ -1,6 +1,6 @@
 ﻿namespace darabank
 {
-    internal class Cliente
+    public class Cliente
     {
         private string nome;
         private string cpf;

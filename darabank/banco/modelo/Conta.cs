@@ -35,7 +35,7 @@ namespace darabank
             this.saca(valor);
             destino.deposita(valor);
         }
-        //incluir metodos nos getters e setters
+
         public int Saldo { get; set; }
 
         public int Agencia
@@ -67,9 +67,7 @@ namespace darabank
             }
         }
 
-        public Cliente Titular { get; set; }//verificar
-
-        //verificar getters e setters - incluir do titular
+        public Cliente Titular { get; set; }
 
         public override bool Equals(object? obj)
         {
@@ -88,7 +86,8 @@ namespace darabank
 
         public override string ToString()
         {
-            return base.ToString();
+            return "agencia: " + agencia +
+                   ", conta: " + numeroDaConta;
         }
     }
 }
