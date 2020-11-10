@@ -1,15 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using darabank;
 
 namespace darabank.banco.modelo
 
 {
-    internal class ContaPoupanca
-     //adicionar inteface
+    public class ContaPoupanca : Conta
     {
-        //adicionar construtor
+        public ContaPoupanca(int agencia, int numeroDaConta) : base(agencia, numeroDaConta)
+        {
+        }
 
-        //adicionar métodos
+        public override void Depositar(double valor)
+        {
+            saldo += valor;
+        }
+
+        public override string ToString()
+        {
+            return "Conta Poupanca, " + base.ToString();
+        }
     }
 }

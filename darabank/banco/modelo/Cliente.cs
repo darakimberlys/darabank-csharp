@@ -1,4 +1,6 @@
-﻿namespace darabank
+﻿
+
+namespace darabank
 {
     public class Cliente
     {
@@ -12,6 +14,5 @@
 
         public string Profissao { get; set; }
 
-        //verificar getters e setters
     }
 }

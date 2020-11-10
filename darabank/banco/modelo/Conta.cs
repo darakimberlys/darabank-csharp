@@ -18,25 +18,32 @@ namespace darabank
             this.numeroDaConta = numeroDaConta;
         }
 
-        public abstract void deposita(double valor);
-        //verificar necessidade de parametro e "throws"
+        public virtual void Depositar(double valor)
+        {
+            this.saldo += valor;
+        }
 
-        public void saca(double valor) 
+        public virtual void Sacar(double valor)
         {
             if (this.saldo < valor)
             {
                 throw new SaldoInsuficienteException("Saldo: " + this.saldo + ", valor: " + valor);
             }
-            this.saldo -= valor;
-        }
-       
-        public void transfere(double valor, Conta destino)
-        {
-            this.saca(valor);
-            destino.deposita(valor);
+            saldo -= valor; //verify
         }
 
-        public int Saldo { get; set; }
+        public bool Transferir(double valor, Conta contaDestino)
+        {
+            if (this.saldo < valor)
+            {
+                return false;
+            }
+            this.saldo -= valor;
+            contaDestino.Depositar(valor);
+            return true;
+        }
+
+        public double Saldo { get; set; }
 
         public int Agencia
         {
@@ -53,7 +60,8 @@ namespace darabank
             }
         }
 
-        public int NumeroDaConta {
+        public int NumeroDaConta
+        {
 
             get { return this.numeroDaConta = NumeroDaConta; }
 
@@ -71,7 +79,7 @@ namespace darabank
 
         public override bool Equals(object? obj)
         {
-            Conta outraConta = (Conta) obj;
+            Conta outraConta = (Conta)obj;
             if (this.agencia != outraConta.agencia)
             {
                 return false;
