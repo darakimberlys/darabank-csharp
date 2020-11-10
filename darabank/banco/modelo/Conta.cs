@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading;
 
 namespace darabank
 {
@@ -26,9 +25,7 @@ namespace darabank
         public virtual void Sacar(double valor)
         {
             if (this.saldo < valor)
-            {
                 throw new SaldoInsuficienteException("Saldo: " + this.saldo + ", valor: " + valor);
-            }
             saldo -= valor; //verify
         }
 
@@ -62,8 +59,7 @@ namespace darabank
 
         public int NumeroDaConta
         {
-
-            get { return this.numeroDaConta = NumeroDaConta; }
+            get { return NumeroDaConta = numeroDaConta; }
 
             set
             {
@@ -71,7 +67,7 @@ namespace darabank
                 {
                     Console.WriteLine("O número da conta não pode ser menor ou igual a zero.");
                 }
-                this.numeroDaConta = numeroDaConta;
+                NumeroDaConta = numeroDaConta;
             }
         }
 

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using darabank;
-
-namespace darabank.banco.modelo
+﻿namespace darabank.banco.modelo
 
 {
     public class ContaPoupanca : Conta
