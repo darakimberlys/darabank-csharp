@@ -1,12 +1,15 @@
-﻿using System;
+using System;
+using darabank;
 using darabank.banco.modelo;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-
-namespace darabank.banco.testes
+namespace darabank_test
 {
-    class TesteGuardadorDeContas
+    [TestClass]
+    public class TesteGuardadorDeContas
     {
-        public static void Main(string[] args)
+        [TestMethod]
+        public void TestMethod1()
         {
             GuardadorDeContas guardador = new GuardadorDeContas();
 
@@ -20,9 +23,8 @@ namespace darabank.banco.testes
             Console.WriteLine(tamanho);
             //funciona
 
-            Conta refConta = guardador.GetReferencia(1);
-            Console.WriteLine(refConta.NumeroDaConta);
-            //quebra
+            //Conta refConta = guardador.GetReferencia(1);
+            //Console.WriteLine(refConta.NumeroDaConta);
         }
     }
 }
