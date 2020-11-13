@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "darabank", "darabank\darabank.csproj", "{86DB2BA5-AF25-4B2D-B445-6815A5D5A441}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "darabank_test", "darabank_test\darabank_test.csproj", "{E29D9BA8-028A-45F7-9A50-7B7166F47E4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "darabank_test", "darabank_test\darabank_test.csproj", "{E29D9BA8-028A-45F7-9A50-7B7166F47E4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,5 +2,6 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9c787518_002Deb46_002D4f99_002Dbd96_002D47a16769882b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestMethod1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;MSTest::E29D9BA8-028A-45F7-9A50-7B7166F47E4D::.NETCoreApp,Version=v3.1::darabank_test.TesteGuardadorDeContas.TestMethod1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::E29D9BA8-028A-45F7-9A50-7B7166F47E4D::.NETCoreApp,Version=v3.1::darabank_test.TesteClasseConta.TestMethod1&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

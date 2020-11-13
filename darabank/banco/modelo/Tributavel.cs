@@ -2,6 +2,6 @@
 {
     interface Tributavel
     {
-        public abstract double ValorImposto();
+        double ValorImposto();
     }
 }

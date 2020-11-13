@@ -1,21 +1,26 @@
-﻿namespace darabank.banco.modelo
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace darabank.banco.modelo
+
 
 {
-    public class ContaCorrente : Conta //implementar metodo
+    public class ContaCorrente : Conta, Tributavel 
     {
         public ContaCorrente(int agencia, int numeroDaConta) : base(agencia, numeroDaConta)
-        {
-        }
+        { }
         public override void Depositar(double valor)
         {
-            saldo += valor;
+            Saldo += valor;
         }
 
-        public override void Sacar(double valor)// verificar exception
+        public override void Sacar(double valor)
         {
-            if (saldo < valor)
+            if (Saldo < valor)
             {
-                throw new SaldoInsuficienteException("Saldo: " + this.saldo + ", valor: " + valor);
+                throw new SaldoInsuficienteException("Saldo: " + Saldo + ", valor: " + valor);
             }
             double valorASacar = valor + 0.2;
             Sacar(valorASacar);
@@ -25,6 +30,11 @@
         public override string ToString()
         {
             return "Conta Corrente, " + base.ToString();
+        }
+
+        public double ValorImposto()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
