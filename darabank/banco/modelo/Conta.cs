@@ -1,76 +1,98 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace darabank.banco.modelo
 {
     public abstract class Conta
     {
-        public int numeroDaConta;
-        public int agencia;
-        public double Saldo { get;  set; }
+        public static double TaxaOperacao { get; private set; }
+
+        public static int TotalDeContasCriadas { get; private set; }
+
         public Cliente Titular { get; set; }
+
+        public int NumerodaConta { get; set; }
+
+        private int _agencia;
+
+        public int Agencia
+        {
+            get
+            {
+                return _agencia;
+            }
+            set
+            {
+                if (value <= 0)
+                {
+                    return;
+                }
+
+                _agencia = value;
+            }
+        }
+
+        private double _saldo = 100;
+        public double Saldo
+        {
+            get
+            {
+                return _saldo;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    return;
+                }
+
+                _saldo = value;
+            }
+        }
 
         public Conta(int agencia, int numeroDaConta)
         {
             Agencia = agencia;
-            NumeroDaConta = numeroDaConta;
+            NumerodaConta = numeroDaConta;
+
+            try { TaxaOperacao = 30 / TotalDeContasCriadas; }
+            catch (DivideByZeroException) 
+            {
+                Console.WriteLine("Exceção com Taxa da Operacao=" + TaxaOperacao + " e Total de Contas Criadas =" + TotalDeContasCriadas); 
+            }
+            TotalDeContasCriadas++;
         }
 
-        public int NumeroDaConta { get ; set ; }
-
-        public int Agencia { get; set; }
-
-        public int ContadorSaquesNaoPermitidos { get; private set; }
-
-
-        public virtual void Depositar(double valor) //verificar
+        public virtual bool Sacar(double valor)
         {
-            Saldo += valor;
-        }
-
-        public override bool Equals(object obj)
-        {
-            Conta outraConta = obj as Conta;
-
-            if (outraConta == null)
+            if (_saldo < valor)
             {
                 return false;
             }
-            return NumeroDaConta == outraConta.NumeroDaConta && Agencia == outraConta.Agencia;
+
+            _saldo -= valor;
+            return true;
         }
 
-        public virtual void Sacar(double valor)
+        public virtual void Depositar(double valor)
         {
-            if (valor <= 0)
-            {
-                throw new ArgumentException("Valor inválido para o saque.", nameof(valor));
-            }
-
-            if (Saldo > valor)
-            {
-                ContadorSaquesNaoPermitidos++;
-                throw new SaldoInsuficienteException(Saldo, valor);
-            }
-            Saldo -= valor;
+            _saldo += valor;
         }
 
+        public bool Transferir(double valor, ContaCorrente contaDestino)
+        {
+            if (_saldo < valor)
+            {
+                return false;
+            }
+
+            _saldo -= valor;
+            contaDestino.Depositar(valor);
+            return true;
+        }
 
         public override string ToString()
         {
-            return "agencia: " + agencia +
-                   ", conta: " + NumeroDaConta;
+            return base.ToString();
         }
-
-        public void Transferir(double valor, Conta contaDestino)
-        {
-            Sacar(valor);
-            contaDestino.Depositar(valor);
-        }
-
-        public override int GetHashCode() { return 0; }
-
     }
 }

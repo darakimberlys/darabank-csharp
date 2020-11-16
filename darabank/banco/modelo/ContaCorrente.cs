@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-namespace darabank.banco.modelo
-
+﻿namespace darabank.banco.modelo
 
 {
     public class ContaCorrente : Conta, Tributavel 
@@ -16,16 +10,17 @@ namespace darabank.banco.modelo
             Saldo += valor;
         }
 
-        public override void Sacar(double valor)
+        public override bool Sacar(double valor)
         {
             if (Saldo < valor)
             {
+                return false;
                 throw new SaldoInsuficienteException("Saldo: " + Saldo + ", valor: " + valor);
             }
             double valorASacar = valor + 0.2;
             Sacar(valorASacar);
+            return true;
         }
-        //adicionar metodo de imposto 
 
         public override string ToString()
         {
