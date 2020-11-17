@@ -10,16 +10,14 @@
             Saldo += valor;
         }
 
-        public override bool Sacar(double valor)
+        public override void Sacar(double valor)
         {
             if (Saldo < valor)
             {
-                return false;
                 throw new SaldoInsuficienteException("Saldo: " + Saldo + ", valor: " + valor);
             }
             double valorASacar = valor + 0.2;
             Sacar(valorASacar);
-            return true;
         }
 
         public override string ToString()
