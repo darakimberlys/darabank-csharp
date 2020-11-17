@@ -54,12 +54,9 @@ namespace darabank.banco.modelo
             Agencia = agencia;
             NumerodaConta = numeroDaConta;
 
-            try { TaxaOperacao = 30 / TotalDeContasCriadas; }
-            catch (DivideByZeroException) 
-            {
-                Console.WriteLine("Exceção com Taxa da Operacao=" + TaxaOperacao + " e Total de Contas Criadas =" + TotalDeContasCriadas); 
-            }
             TotalDeContasCriadas++;
+            TaxaOperacao = 30 / TotalDeContasCriadas;
+
         }
 
         public virtual bool Sacar(double valor)
