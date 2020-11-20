@@ -1,0 +1,16 @@
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\bin\Debug\netcoreapp3.1\Darabank.SistemaAgencia.exe
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\bin\Debug\netcoreapp3.1\Darabank.SistemaAgencia.deps.json
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\bin\Debug\netcoreapp3.1\Darabank.SistemaAgencia.runtimeconfig.json
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\bin\Debug\netcoreapp3.1\Darabank.SistemaAgencia.runtimeconfig.dev.json
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\bin\Debug\netcoreapp3.1\Darabank.SistemaAgencia.dll
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\bin\Debug\netcoreapp3.1\Darabank.SistemaAgencia.pdb
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\bin\Debug\netcoreapp3.1\Darabank.Modelos.dll
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\bin\Debug\netcoreapp3.1\Darabank.Modelos.pdb
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\obj\Debug\netcoreapp3.1\Darabank.SistemaAgencia.csprojAssemblyReference.cache
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\obj\Debug\netcoreapp3.1\Darabank.SistemaAgencia.AssemblyInfoInputs.cache
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\obj\Debug\netcoreapp3.1\Darabank.SistemaAgencia.AssemblyInfo.cs
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\obj\Debug\netcoreapp3.1\Darabank.SistemaAgencia.csproj.CoreCompileInputs.cache
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\obj\Debug\netcoreapp3.1\Darabank.SistemaAgencia.csproj.CopyComplete
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\obj\Debug\netcoreapp3.1\Darabank.SistemaAgencia.dll
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\obj\Debug\netcoreapp3.1\Darabank.SistemaAgencia.pdb
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\obj\Debug\netcoreapp3.1\Darabank.SistemaAgencia.genruntimeconfig.cache

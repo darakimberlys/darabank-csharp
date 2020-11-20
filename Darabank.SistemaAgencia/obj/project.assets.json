@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Darabank.Modelos/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Darabank.Modelos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Darabank.Modelos.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Darabank.Modelos/1.0.0": {
+      "type": "project",
+      "path": "../Darabank.Modelos/Darabank.Modelos.csproj",
+      "msbuildProject": "../Darabank.Modelos/Darabank.Modelos.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Darabank.Modelos >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\darak\\.nuget\\packages\\": {},
@@ -37,7 +56,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\darak\\Google Drive\\2- Education\\1- Cursos\\C#\\2- Intermediário\\darabank\\Darabank.Modelos\\Darabank.Modelos.csproj": {
+              "projectPath": "C:\\Users\\darak\\Google Drive\\2- Education\\1- Cursos\\C#\\2- Intermediário\\darabank\\Darabank.Modelos\\Darabank.Modelos.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,4 +1,6 @@
 ﻿using System;
+using Darabank.Modelos;
+using Darabank.Modelos.Funcionarios;
 
 namespace Darabank.SistemaAgencia
 {
@@ -6,7 +8,9 @@ namespace Darabank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ContaCorrente conta = new ContaCorrente(336, 2566);
+            Funcionario funcionario = null;
+            Console.WriteLine(conta.NumerodaConta);
         }
     }
 }

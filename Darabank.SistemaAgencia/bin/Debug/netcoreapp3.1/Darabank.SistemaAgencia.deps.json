@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Darabank.SistemaAgencia/1.0.0": {
+        "dependencies": {
+          "Darabank.Modelos": "1.0.0"
+        },
+        "runtime": {
+          "Darabank.SistemaAgencia.dll": {}
+        }
+      },
+      "Darabank.Modelos/1.0.0": {
+        "runtime": {
+          "Darabank.Modelos.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Darabank.SistemaAgencia/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Darabank.Modelos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
