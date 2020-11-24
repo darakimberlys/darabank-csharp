@@ -24,6 +24,6 @@ namespace Darabank.Modelos.Funcionarios
 
         public abstract void AumentarSalario();
 
-        protected internal abstract double GetBonificacao();
+        internal protected abstract double GetBonificacao();
     }
 }
