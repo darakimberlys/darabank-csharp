@@ -1,6 +1,7 @@
 ﻿using System;
 using Darabank.Modelos;
 using Darabank.Modelos.Funcionarios;
+using Humanizer;
 
 namespace Darabank.SistemaAgencia
 {
@@ -14,35 +15,11 @@ namespace Darabank.SistemaAgencia
             TimeSpan diferenca = dataFimPagamento - dataCorrente;
 
             Console.WriteLine(dataFimPagamento);
-            Console.WriteLine(dataCorrente+"\n");
+            Console.WriteLine(dataCorrente + "\n");
 
-            string message = "Vencimento em " + GetIntervaloDeTempoLegivel(diferenca);
+            string message = "Vencimento em " + TimeSpanHumanizeExtensions.Humanize(diferenca);
 
             Console.WriteLine(message);
-
-            static string GetIntervaloDeTempoLegivel(TimeSpan timeSpan)
-            { 
-                if (timeSpan.Days > 30)
-                {
-                    int quantidadeMeses = timeSpan.Days / 30;
-                    if(quantidadeMeses == 1)
-                    {
-                        return " 1 mês";
-                    }
-                    return quantidadeMeses + " meses";
-                }
-
-                else if(timeSpan.Days > 7)
-                {
-                    int quantidadeSemanas = timeSpan.Days / 7;
-                    if(quantidadeSemanas == 1)
-                    {
-                        return " 1 semana";
-                    }
-                    return quantidadeSemanas + " semanas";
-                }
-                return timeSpan.Days + " dias";
-            }
         }
     }
 }

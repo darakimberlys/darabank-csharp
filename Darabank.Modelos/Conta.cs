@@ -120,7 +120,7 @@ namespace Darabank.Modelos
                 ContadorDeTransferenciasNaoPermitidas++; //Conta quantas vezes o usuario tentou transferir um valor que ele não possui;
                 throw new OperacaoFinanceiraException("Operação não realizada. Por favor, verifique", ex);
             }
-                
+
             _saldo -= valor;
             contaDestino.Depositar(valor);
         }

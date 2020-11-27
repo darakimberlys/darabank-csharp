@@ -5,7 +5,7 @@
     /// Esta classe define uma Conta Corrente no banco.
     /// </summary>
 
-    public class ContaCorrente : Conta, ITributavel 
+    public class ContaCorrente : Conta, ITributavel
     {
         /// <summary>
         /// Cria uma instancia de Conta Corrente a selecionar com os argumentos utilizados.
