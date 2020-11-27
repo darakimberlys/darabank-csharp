@@ -1,8 +1,17 @@
 ﻿namespace Darabank.Modelos
 
 {
+    /// <summary>
+    /// Esta classe define uma Conta Corrente no banco.
+    /// </summary>
+
     public class ContaCorrente : Conta, ITributavel 
     {
+        /// <summary>
+        /// Cria uma instancia de Conta Corrente a selecionar com os argumentos utilizados.
+        /// </summary>
+        /// <param name="agencia">Representa o valor da propriedade <see cref="Agencia"/>, e deve possuir um valor menor que 0. </param>
+        /// <param name="numeroDaConta">Representa o valor da propriedade <see cref="NumeroDaConta"/>, e deve possuir um valor menor que 0. </param>
         public ContaCorrente(int agencia, int numeroDaConta) : base(agencia, numeroDaConta)
         { }
         public override void Depositar(double valor)

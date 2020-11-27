@@ -2,6 +2,10 @@
 
 namespace Darabank.Modelos
 {
+
+    /// <summary>
+    /// Esta classe define o funcionamento das Contas no banco.
+    /// </summary>
     public abstract class Conta
     {
         public static double TaxaOperacao { get; private set; }
@@ -51,7 +55,11 @@ namespace Darabank.Modelos
                 _saldo = value;
             }
         }
-
+        /// <summary>
+        /// Cria uma instancia do tipo de Conta a selecionar com os argumentos utilizados.
+        /// </summary>
+        /// <param name="agencia"> Representa o valor da Propriedade <see cref="Agencia"/>, e deve possuir um valor menor que 0. </param>
+        /// <param name="numeroDaConta"> Representa o valor da Propriedade <see cref="NumerodaConta"/>, e deve possuir um valor menor que 0.</param>
         public Conta(int agencia, int numeroDaConta)
         {
             if (agencia <= 0)

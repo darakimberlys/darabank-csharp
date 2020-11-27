@@ -46,6 +46,8 @@ namespace Darabank.Modelos
             Console.WriteLine(contaMay.Titular.Nome);
 
             //teste ok 09/11 - conta corrente, verificar anotacoes na classe
+
+            Conta conta1 = new ContaCorrente(123, 12112);
         }
     }
 }
