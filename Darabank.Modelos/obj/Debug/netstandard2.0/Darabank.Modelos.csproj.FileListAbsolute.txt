@@ -7,3 +7,4 @@ C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank
 C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.Modelos\obj\Debug\netstandard2.0\Darabank.Modelos.dll
 C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.Modelos\obj\Debug\netstandard2.0\Darabank.Modelos.pdb
 C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.Modelos\bin\Debug\netstandard2.0\Darabank.Modelos.xml
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.Modelos\obj\Debug\netstandard2.0\Darabank.Modelos.csprojAssemblyReference.cache
