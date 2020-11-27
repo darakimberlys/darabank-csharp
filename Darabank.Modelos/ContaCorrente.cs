@@ -18,7 +18,10 @@
         {
             Saldo += valor;
         }
-
+        /// <summary>
+        /// Realiza o saque e atualiza o valor da propriedade <see cref="Saldo"/>
+        /// </summary>
+        /// <param name="valor">Representa o valor do Saque, deve ser maior que 0 e menor que o <see cref="Saldo"/></param>
         public override void Sacar(double valor)
         {
             if (Saldo < valor)

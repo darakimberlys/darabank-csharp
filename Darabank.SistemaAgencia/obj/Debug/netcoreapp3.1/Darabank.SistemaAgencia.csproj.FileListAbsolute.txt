@@ -14,3 +14,4 @@ C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank
 C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\obj\Debug\netcoreapp3.1\Darabank.SistemaAgencia.dll
 C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\obj\Debug\netcoreapp3.1\Darabank.SistemaAgencia.pdb
 C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\obj\Debug\netcoreapp3.1\Darabank.SistemaAgencia.genruntimeconfig.cache
+C:\Users\darak\Google Drive\2- Education\1- Cursos\C#\2- Intermediário\darabank\Darabank.SistemaAgencia\bin\Debug\netcoreapp3.1\Darabank.Modelos.xml

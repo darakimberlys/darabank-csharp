@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Darabank.Modelos</name>
+    </assembly>
+    <members>
+        <member name="T:Darabank.Modelos.Conta">
+            <summary>
+            Esta classe define o funcionamento das Contas no banco.
+            </summary>
+        </member>
+        <member name="M:Darabank.Modelos.Conta.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Cria uma instancia do tipo de Conta a selecionar com os argumentos utilizados.
+            </summary>
+            <param name="agencia"> Representa o valor da Propriedade <see cref="P:Darabank.Modelos.Conta.Agencia"/>, e deve possuir um valor menor que 0. </param>
+            <param name="numeroDaConta"> Representa o valor da Propriedade <see cref="P:Darabank.Modelos.Conta.NumerodaConta"/>, e deve possuir um valor menor que 0.</param>
+        </member>
+        <member name="M:Darabank.Modelos.Conta.Sacar(System.Double)">
+            <summary>
+            Realiza o saque e atualiza o valor da propriedade <see cref="P:Darabank.Modelos.Conta.Saldo"/>
+            </summary>
+            <exception cref="T:System.ArgumentException">Exceção lançado quando um valor negativo é utilizado no argumento <paramref name="valor"/> </exception>
+            <exception cref="T:Darabank.Modelos.SaldoInsuficienteException">Exceção lançada quando o <paramref name="valor"/> é maior que o valor da propriedade <see cref="P:Darabank.Modelos.Conta.Saldo"/></exception>
+            <param name="valor">Representa o valor do Saque, deve ser maior que 0 e menor que o <see cref="P:Darabank.Modelos.Conta.Saldo"/></param>
+        </member>
+        <member name="T:Darabank.Modelos.ContaCorrente">
+            <summary>
+            Esta classe define uma Conta Corrente no banco.
+            </summary>
+        </member>
+        <member name="M:Darabank.Modelos.ContaCorrente.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Cria uma instancia de Conta Corrente a selecionar com os argumentos utilizados.
+            </summary>
+            <param name="agencia">Representa o valor da propriedade <see cref="!:Agencia"/>, e deve possuir um valor menor que 0. </param>
+            <param name="numeroDaConta">Representa o valor da propriedade <see cref="!:NumeroDaConta"/>, e deve possuir um valor menor que 0. </param>
+        </member>
+        <member name="M:Darabank.Modelos.ContaCorrente.Sacar(System.Double)">
+            <summary>
+            Realiza o saque e atualiza o valor da propriedade <see cref="!:Saldo"/>
+            </summary>
+            <param name="valor">Representa o valor do Saque, deve ser maior que 0 e menor que o <see cref="!:Saldo"/></param>
+        </member>
+        <member name="T:Darabank.Modelos.ContaPoupanca">
+            <summary>
+            Esta classe define uma Conta Poupança no banco.
+            </summary>
+        </member>
+        <member name="M:Darabank.Modelos.ContaPoupanca.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Cria uma instancia de Conta Poupança a selecionar com os argumentos utilizados.
+            </summary>
+            <param name="agencia"> Representa o valor da Propriedade <see cref="!:Agencia"/>, e deve possuir um valor menor que 0. </param>
+            <param name="numeroDaConta"> Representa o valor da Propriedade <see cref="!:NumeroDaConta"/>, e deve possuir um valor menor que 0.</param>
+        </member>
+    </members>
+</doc>
