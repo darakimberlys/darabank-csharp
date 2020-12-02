@@ -9,6 +9,7 @@ namespace Darabank.SistemaAgencia
     {
         static void Main(string[] args)
         {
+           //Utilização do Humanizer para refinar a contagem entre datas;
             DateTime dataFimPagamento = new DateTime(2020, 12, 7);
             DateTime dataCorrente = DateTime.Now;
 
@@ -20,6 +21,7 @@ namespace Darabank.SistemaAgencia
             string message = "Vencimento em " + TimeSpanHumanizeExtensions.Humanize(diferenca);
 
             Console.WriteLine(message);
+
         }
     }
 }

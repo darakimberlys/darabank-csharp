@@ -1243,6 +1243,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
             "C:\\Users\\darak\\Google Drive\\2- Education\\1- Cursos\\C#\\2- Intermediário\\darabank\\Darabank.Modelos\\Darabank.Modelos.csproj": {
               "projectPath": "C:\\Users\\darak\\Google Drive\\2- Education\\1- Cursos\\C#\\2- Intermediário\\darabank\\Darabank.Modelos\\Darabank.Modelos.csproj"
@@ -1258,6 +1259,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Humanizer": {
             "target": "Package",
@@ -1279,7 +1281,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
